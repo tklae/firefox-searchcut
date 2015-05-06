@@ -5,5 +5,22 @@
   "description": "a basic add-on",
   "author": "",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  
+  "preferences": [
+      {
+          "name": "shortcut1",
+          "title": "Shortcut 1 configuration",
+          "description": "Format: Name,Shortcut,URL (Example: Google,g,http://maps.google.com/maps?q=%q)",
+          "type": "string",
+          "value": "Google,g,http://maps.google.com/maps?q=%q"
+      },
+      {
+          "name": "shortcut2",
+          "title": "Shortcut 2 configuration",
+          "description": "Format: Name,Shortcut,URL (Example: Google,g,http://maps.google.com/maps?q=%q)",
+          "type": "string",
+          "value": "YouTube,y,http://www.youtube.com/results?search_query=%q"
+      }
+  ]
 }

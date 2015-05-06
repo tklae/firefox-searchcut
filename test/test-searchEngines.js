@@ -9,4 +9,9 @@ exports["test that a shortcut can be added"] = function(assert) {
     assert.equal(searchEngines.getUrlFor("myShortcut", "Filled"), "urlWithPlaceholderFilled");
 }
 
+exports["test that a shortcut can be added from string description"] = function(assert) {
+    searchEngines.addShortcutFromPreferenceString("name,someShortcut,urlWithPlaceholder%q")
+    assert.equal(searchEngines.getUrlFor("someShortcut", "Filled"), "urlWithPlaceholderFilled");
+}
+
 require("sdk/test").run(exports);
