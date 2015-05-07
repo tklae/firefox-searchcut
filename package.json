@@ -1,115 +1,100 @@
 {
-  "name": "tiklsearch",
-  "title": "tiklsearch",
+  "name": "searchcut",
+  "title": "Searchcut",
   "id": "jid1-ziylaCf5cpzKqg",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
+  "description": "Simple addon for using shortcuts in the url bar. For example, 'g foo' goes to the google search result for 'foo'.\nDefault shortcuts include y,i,m,w,a,t for Youtube, Imagesearch, Maps, Wikipedia, Amazon and Twitter.\n\nA shortcut can be defined below using the following format: 'name,shortcut,url'. '%q' is the placeholder for the value to be inserted into the url.\n\nExample using Google Maps:\n'Google Maps,m,https://maps.google.com/maps?q=%q'.\nNow, if the user types 'm Amsterdam' into the url bar, the browser will automatically go to 'https://maps.google.com/maps?q=Amsterdam'.",
+  "author": "tklae",
+  "license": "MIT",
   "version": "0.1",
-  
+  "homepage": "https://github.com/tklae/firefox-searchcut",
   "preferences": [
       {
           "name": "shortcut1",
           "title": "Configuration for Shortcut 1",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "DuckDuckGo,d,https://duckduckgo.com/?q=%q"
       },
       {
           "name": "shortcut2",
           "title": "Configuration for Shortcut 2",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Google,g,https://www.google.com/search?q=%q"
       },
       {
           "name": "shortcut3",
           "title": "Configuration for Shortcut 3",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Google Images,i,https://www.google.com/images?q=%q"
       },
       {
           "name": "shortcut4",
           "title": "Configuration for Shortcut 4",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Google Maps,m,https://maps.google.com/maps?q=%q"
       },
       {
           "name": "shortcut5",
           "title": "Configuration for Shortcut 5",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Google Translate,gt,https://translate.google.com/#auto|en|%q"
       },
       {
           "name": "shortcut6",
           "title": "Configuration for Shortcut 6",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Wikipedia,w,https://en.wikipedia.org/wiki/%q"
       },
       {
           "name": "shortcut7",
           "title": "Configuration for Shortcut 7",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Youtube,y,https://www.youtube.com/results?search_query=%q"
       },
       {
           "name": "shortcut8",
           "title": "Configuration for Shortcut 8",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Amazon.com,a,https://www.amazon.com/gp/search?keywords=%q"
       },
       {
           "name": "shortcut9",
           "title": "Configuration for Shortcut 9",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Weather,wt,http://www.weather.com/search/enhancedlocalsearch?where=%q&loctypes=1/5/9/11/13/19/&from=hdr"
       },
       {
           "name": "shortcut10",
           "title": "Configuration for Shortcut 10",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "IMDB,imdb,http://www.imdb.com/find?s=all&q=%q"
       },
       {
           "name": "shortcut11",
           "title": "Configuration for Shortcut 11",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Wolfram Alpha,wa,https://www.wolframalpha.com/input/?i=%q"
       },
       {
           "name": "shortcut12",
           "title": "Configuration for Shortcut 12",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": "Twitter,t,https://twitter.com/search?q=%q"
       },
       {
           "name": "shortcut13",
           "title": "Configuration for Shortcut 13",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": ""
       },
       {
           "name": "shortcut14",
           "title": "Configuration for Shortcut 14",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": ""
       },
       {
           "name": "shortcut15",
           "title": "Configuration for Shortcut 15",
-          "description": "Format: Name,Shortcut,URL (Example: Google,g,https://maps.google.com/maps?q=%q)",
           "type": "string",
           "value": ""
       }
