@@ -1,4 +1,4 @@
-var searchEngines = require("./searchEngines");
+var searchEngines = require("./shortcutRepository");
 
 exports["test that it returns null for undefined shortcut"] = function(assert) {
     assert.equal(searchEngines.getUrlFor("somethingNotDefined", "anyValue"), null);
