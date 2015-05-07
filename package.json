@@ -5,7 +5,7 @@
   "description": "Simple addon for using shortcuts in the url bar. For example, 'g foo' goes to the google search result for 'foo'.\nDefault shortcuts include y,i,m,w,a,t for Youtube, Imagesearch, Maps, Wikipedia, Amazon and Twitter.\n\nA shortcut can be defined below using the following format: 'name,shortcut,url'. '%q' is the placeholder for the value to be inserted into the url.\n\nExample using Google Maps:\n'Google Maps,m,https://maps.google.com/maps?q=%q'.\nNow, if the user types 'm Amsterdam' into the url bar, the browser will automatically go to 'https://maps.google.com/maps?q=Amsterdam'.",
   "author": "tklae",
   "license": "MIT",
-  "version": "0.1",
+  "version": "1.0",
   "homepage": "https://github.com/tklae/firefox-searchcut",
   "preferences": [
       {
