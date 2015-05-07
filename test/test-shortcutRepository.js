@@ -14,6 +14,14 @@ exports["test that a shortcut can be added from string description"] = function(
     assert.equal(searchEngines.getUrlFor("someShortcut", "Filled"), "urlWithPlaceholderFilled");
 }
 
+exports["test that whitespaces are stripped from string description"] = function(assert) {
+    searchEngines.addShortcutFromPreferenceString(" whiteSpaceId ", " whitespaceName , whitespaceShortcut , whitespaceUrl ")
+    var shortcutDefinition = searchEngines.getById("whiteSpaceId");
+    assert.equal(shortcutDefinition.name, "whitespaceName");
+    assert.equal(shortcutDefinition.shortcut, "whitespaceShortcut");
+    assert.equal(shortcutDefinition.url, "whitespaceUrl");
+}
+
 exports["test that a shortcut cannot be added from a malformed string description"] = function(assert) {
     searchEngines.addShortcutFromPreferenceString("idForMalformedStuff", "malformedStuff")
     assert.equal(searchEngines.getById("idForMalformedStuff"), null);
