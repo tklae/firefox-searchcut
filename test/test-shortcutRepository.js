@@ -14,6 +14,16 @@ exports["test that a shortcut can be added from string description"] = function(
     assert.equal(searchEngines.getUrlFor("someShortcut", "Filled"), "urlWithPlaceholderFilled");
 }
 
+exports["test that a shortcut cannot be added from a malformed string description"] = function(assert) {
+    searchEngines.addShortcutFromPreferenceString("idForMalformedStuff", "malformedStuff")
+    assert.equal(searchEngines.getById("idForMalformedStuff"), null);
+}
+
+exports["test that a shortcut cannot be added from null id"] = function(assert) {
+    searchEngines.addShortcutFromPreferenceString(null, "name,someShortcut,urlWithPlaceholder%q")
+    assert.equal(searchEngines.getById(null), null);
+}
+
 exports["test that a shortcut can be modified from string description if the id is the same"] = function(assert) {
     searchEngines.addShortcutFromPreferenceString("someId", "name,someShortcut,urlWithPlaceholder%q")
     searchEngines.addShortcutFromPreferenceString("someId", "name,anotherShortcut,anotherUrlWithPlaceholder%q")
